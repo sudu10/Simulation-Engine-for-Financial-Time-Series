@@ -52,7 +52,7 @@ Copy code
 - Optional loss-based CVA-style calculations  
 - Optional wrong-way stress exposure metrics  
 
-### ✔ Reporting Outputs
+### Reporting Outputs
 - CSV exposure tables  
 - JSON metric summaries  
 - Diagnostics report  
@@ -60,7 +60,7 @@ Copy code
 
 ---
 
-## 🛠 Installation
+## Installation
 
 Python **3.9+** recommended.
 
