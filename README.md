@@ -8,11 +8,11 @@ This project is intended for quantitative modeling, financial research workflows
 ## Project Structure
 
 exposure_output/
-├─ cva_summary.csv
-├─ exposure_profile.csv
-├─ exposure_profile.png
-├─ exposure_summary.json
-├─ simulation_diagnostics.csv
+cva_summary.csv
+exposure_profile.csv
+exposure_profile.png
+exposure_summary.json
+simulation_diagnostics.csv
 
 exposure_model.py
 exposure_config.yaml
@@ -20,7 +20,7 @@ historical_prices.csv
 README.md
 
 markdown
-Copy code
+
 
 - **exposure_model.py** — main simulation and analytics pipeline  
 - **exposure_config.yaml** — configuration for simulations, assets, and outputs  
@@ -71,13 +71,13 @@ pip install numpy pandas scipy matplotlib seaborn pyyaml tqdm
 Running the Engine
 1. Run with configuration
 bash
-Copy code
+
 python exposure_model.py --config exposure_config.yaml
 This loads historical data, estimates parameters, runs simulations, computes exposures, and produces reports under exposure_output/.
 
 2. Generate synthetic sample datasets
 bash
-Copy code
+
 python exposure_model.py --generate-sample --sample-output historical_prices.csv
 Useful if no real price history is available.
 
@@ -97,7 +97,7 @@ Output settings
 Example snippet:
 
 yaml
-Copy code
+
 simulation:
   num_simulations: 5000
   horizon_days: 252
