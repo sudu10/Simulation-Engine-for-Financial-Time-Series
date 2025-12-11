@@ -16,8 +16,7 @@ exposure_output/
 -exposure_model.py  
 -exposure_config.yaml  
 -historical_prices.csv  
-
-README.md
+-README.md
 
 - **exposure_model.py** — main simulation and analytics pipeline  
 - **exposure_config.yaml** — configuration for simulations, assets, and outputs  
