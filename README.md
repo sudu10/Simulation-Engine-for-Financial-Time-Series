@@ -7,15 +7,15 @@ This project is intended for quantitative modeling, financial research workflows
 
 ## Project Structure
 
-exposure_output/
--cva_summary.csv
--exposure_profile.csv
--exposure_profile.png
--exposure_summary.json
--simulation_diagnostics.csv
--exposure_model.py
--exposure_config.yaml
--historical_prices.csv
+exposure_output/  
+-cva_summary.csv  
+-exposure_profile.csv  
+-exposure_profile.png  
+-exposure_summary.json  
+-simulation_diagnostics.csv  
+-exposure_model.py  
+-exposure_config.yaml  
+-historical_prices.csv  
 
 README.md
 
