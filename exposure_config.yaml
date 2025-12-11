@@ -1,0 +1,63 @@
+simulation:
+  num_simulations: 50000
+  horizon_days: 252 
+  time_steps: 63     
+  seed: 42
+  use_antithetic: true
+  confidence_level: 0.95
+
+market_data:
+  historical_prices_file: "historical_prices.csv"
+  risk_free_rate: 0.045  
+  estimation_window_days: 504  
+
+counterparty:
+  name: "ABC_CORP"
+  credit_rating: "BBB"
+  cds_spread_bps: 150  
+  recovery_rate: 0.40
+  lgd: 0.60  
+
+netting_set:
+  id: "NS_001"
+  has_csa: true
+  threshold: 10000000       
+  minimum_transfer_amount: 500000  
+  margin_period_of_risk_days: 10
+  independent_amount: 0
+  rehypothecation_allowed: false
+
+positions:
+  - asset_id: 1
+    asset_name: "SPX_INDEX"
+    asset_class: "EQUITY"
+    position_type: "SPOT"
+    notional: 10000000
+    direction: 1
+  - asset_id: 2
+    asset_name: "EURUSD"
+    asset_class: "FX"
+    position_type: "SPOT"
+    notional: 5000000
+    direction: -1
+  - asset_id: 3
+    asset_name: "UST_10Y"
+    asset_class: "RATES"
+    position_type: "SPOT"
+    notional: 25000000
+    direction: 1
+
+exposure_metrics:
+  pfe_percentiles: [75, 90, 95, 97.5, 99]
+  calculate_cva: true
+  calculate_effective_epe: true
+  calculate_wrong_way_risk: true
+
+output:
+  directory: "./exposure_output"
+  exposure_profile_csv: "exposure_profile.csv"
+  simulation_diagnostics_csv: "simulation_diagnostics.csv"
+  cva_summary_csv: "cva_summary.csv"
+  generate_plots: true
+  plot_format: "png"
+  plot_dpi: 150

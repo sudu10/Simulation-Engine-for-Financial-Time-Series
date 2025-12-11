@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "generated_at": "2025-12-11T17:41:05.023771",
+    "model_version": "2.1.0",
+    "regulatory_reference": "Basel III SA-CCR (BCBS 279)"
+  },
+  "simulation_config": {
+    "num_simulations": 50000,
+    "horizon_days": 252,
+    "time_steps": 63,
+    "antithetic_variates": true
+  },
+  "market_parameters": {
+    "estimation_date": "2025-12-11",
+    "estimation_window_days": 503,
+    "assets": [
+      "SPX",
+      "EURUSD",
+      "UST10Y"
+    ],
+    "spot_prices": {
+      "SPX": 9951.528858958596,
+      "EURUSD": 1.0980121287582483,
+      "UST10Y": 98.17881470865532
+    },
+    "volatilities": {
+      "SPX": 0.16849480167173947,
+      "EURUSD": 0.07856475499248884,
+      "UST10Y": 0.061057376896904166
+    }
+  },
+  "exposure_metrics": {
+    "peak_exposure": 1604275.1222023075,
+    "peak_exposure_time_years": 1.0,
+    "effective_epe": 887732.0379805412,
+    "expected_positive_exposure": 887732.0379805412,
+    "terminal_ee": 1604275.1222023075,
+    "pfe_95_1y": 4465224.422289471,
+    "pfe_99_1y": 5986685.343103351
+  },
+  "cva_metrics": {
+    "cva_value": 12916.558046457027,
+    "cva_percentage": 0.8051336000726302,
+    "1y_survival_probability": 0.9952494151313634
+  },
+  "wrong_way_risk": {
+    "correlation": -0.9618968827958576,
+    "adjustment_factor": 1.0,
+    "category": "HIGH"
+  }
+}

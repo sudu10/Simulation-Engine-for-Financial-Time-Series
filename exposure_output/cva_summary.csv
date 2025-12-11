@@ -1,0 +1,2 @@
+counterparty,credit_rating,cds_spread_bps,recovery_rate,lgd,hazard_rate,cva_value,cva_percentage,1y_survival_prob
+ABC_CORP,BBB,150,0.4,0.6,0.025,12916.558046457027,0.8051336000726302,0.9988102321451904
