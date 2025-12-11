@@ -8,19 +8,16 @@ This project is intended for quantitative modeling, financial research workflows
 ## Project Structure
 
 exposure_output/
-cva_summary.csv
-exposure_profile.csv
-exposure_profile.png
-exposure_summary.json
-simulation_diagnostics.csv
+-cva_summary.csv
+-exposure_profile.csv
+-exposure_profile.png
+-exposure_summary.json
+-simulation_diagnostics.csv
+-exposure_model.py
+-exposure_config.yaml
+-historical_prices.csv
 
-exposure_model.py
-exposure_config.yaml
-historical_prices.csv
 README.md
-
-markdown
-
 
 - **exposure_model.py** — main simulation and analytics pipeline  
 - **exposure_config.yaml** — configuration for simulations, assets, and outputs  
@@ -95,8 +92,6 @@ Exposure percentile metrics
 Output settings
 
 Example snippet:
-
-yaml
 
 simulation:
   num_simulations: 5000
